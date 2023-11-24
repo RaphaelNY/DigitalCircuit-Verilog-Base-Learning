@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DigitalCircuit-Verilog-Base-Learning/newly-start-project/newly-start-project.srcs/sources_1/new/First_M.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module First_M
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DigitalCircuit-Verilog-Base-Learning/newly-start-project/newly-start-project.srcs/sim_1/new/First_M_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module First_M_test
