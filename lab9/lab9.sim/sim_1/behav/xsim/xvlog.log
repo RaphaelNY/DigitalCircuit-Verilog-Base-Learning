@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DigitalCircuit-Verilog-Base-Learning/lab9/lab9.srcs/sources_1/new/Reversible_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Reversible_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DigitalCircuit-Verilog-Base-Learning/lab9/lab9.srcs/sim_1/new/Test_Reversible_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Test_Reversible_counter
