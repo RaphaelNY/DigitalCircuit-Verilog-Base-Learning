@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DigitalCircuit-Verilog-Base-Learning/lab3/lab3.srcs/sources_1/new/binary_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LS_74_138
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DigitalCircuit-Verilog-Base-Learning/lab3/lab3.srcs/sim_1/new/test_binary_encoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_binary_encoder
