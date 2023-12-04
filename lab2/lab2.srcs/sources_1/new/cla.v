@@ -31,7 +31,7 @@
 //     reg [3:1] C;
 //     reg [3:0] G;
 //     reg [3:0] P;
-//     reg [3:0] i;
+//     reg [3:0] i; // the top seat is signed
 
 //     always @* begin
 //         for (i=0; i<4; i=i+1) begin
