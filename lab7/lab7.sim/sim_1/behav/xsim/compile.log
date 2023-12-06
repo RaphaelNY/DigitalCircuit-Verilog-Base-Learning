@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DigitalCircuit-Verilog-Base-Learning/lab7/lab7.srcs/sources_1/new/8-bit register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bit8_register
+INFO: [VRFC 10-311] analyzing module TS_8bits_Gate
+INFO: [VRFC 10-311] analyzing module bit_8D
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/DigitalCircuit-Verilog-Base-Learning/lab7/lab7.srcs/sim_1/new/test_8bit_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_8bit_register
