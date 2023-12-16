@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log binary_encoder.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source binary_encoder.tcl
+EAStep vivado -log LS_74_138.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source LS_74_138.tcl

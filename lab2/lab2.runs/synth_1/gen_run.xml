@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7k70tlfbg484-2L" LaunchTime="1701691159" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/cla.dcp">
   <File Type="PA-TCL" Name="cla.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="cla_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="cla_reports.tcl"/>
   <File Type="RDS-RDS" Name="cla.vds"/>
   <File Type="RDS-UTIL" Name="cla_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="cla_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="cla.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="cla_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="cla_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/cla.v">

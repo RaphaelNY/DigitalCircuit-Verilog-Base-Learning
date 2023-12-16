@@ -1,6 +1,6 @@
 
 *** Running vivado
-    with args -log binary_encoder.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source binary_encoder.tcl
+    with args -log LS_74_138.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source LS_74_138.tcl
 
 
 ECHO 处于关闭状态。
@@ -13,96 +13,82 @@ ECHO 处于关闭状态。
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
-source binary_encoder.tcl -notrace
-create_project: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 466.496 ; gain = 183.809
+source LS_74_138.tcl -notrace
 Command: read_checkpoint -auto_incremental -incremental E:/DigitalCircuit-Verilog-Base-Learning/lab3/lab3.srcs/utils_1/imports/synth_1/binary_encoder.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from E:/DigitalCircuit-Verilog-Base-Learning/lab3/lab3.srcs/utils_1/imports/synth_1/binary_encoder.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
-Command: synth_design -top binary_encoder -part xc7k70tlfbg484-2L
+Command: synth_design -top LS_74_138 -part xc7a100tfgg484-2L
 Starting synth_design
-Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70tl'
-INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70tl'
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tfgg484-2L
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 35192
+INFO: [Synth 8-7075] Helper process launched with PID 43612
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 917.449 ; gain = 440.402
+Starting RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 1323.328 ; gain = 442.555
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'LS_74_138' [E:/DigitalCircuit-Verilog-Base-Learning/lab3/lab3.srcs/sources_1/new/binary_encoder.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'LS_74_138' (0#1) [E:/DigitalCircuit-Verilog-Base-Learning/lab3/lab3.srcs/sources_1/new/binary_encoder.v:33]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1428.840 ; gain = 548.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1428.840 ; gain = 548.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1428.840 ; gain = 548.066
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1428.840 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
 
-*** Running vivado
-    with args -log binary_encoder.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source binary_encoder.tcl
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/DigitalCircuit-Verilog-Base-Learning/lab3/lab3.srcs/constrs_1/new/LS_74_138.xdc]
+Finished Parsing XDC File [E:/DigitalCircuit-Verilog-Base-Learning/lab3/lab3.srcs/constrs_1/new/LS_74_138.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/DigitalCircuit-Verilog-Base-Learning/lab3/lab3.srcs/constrs_1/new/LS_74_138.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/LS_74_138_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/LS_74_138_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
 
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1498.898 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
 
-ECHO 处于关闭状态。
-ECHO 处于关闭状态。
-
-****** Vivado v2023.2 (64-bit)
-  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
-  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
-  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-
-source binary_encoder.tcl -notrace
-Command: read_checkpoint -auto_incremental -incremental E:/DigitalCircuit-Verilog-Base-Learning/lab3/lab3.srcs/utils_1/imports/synth_1/binary_encoder.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from E:/DigitalCircuit-Verilog-Base-Learning/lab3/lab3.srcs/utils_1/imports/synth_1/binary_encoder.dcp for incremental synthesis
-INFO: [Vivado 12-7989] Please ensure there are no constraint changes
-Command: synth_design -top binary_encoder -part xc7k70tlfbg484-2L
-Starting synth_design
-Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70tl'
-INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70tl'
+系统找不到指定的路径。
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1498.898 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
-INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
-INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 36604
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:00 ; elapsed = 00:00:04 . Memory (MB): peak = 918.066 ; gain = 439.566
----------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'binary_encoder' [E:/DigitalCircuit-Verilog-Base-Learning/lab3/lab3.srcs/sources_1/new/binary_encoder.v:23]
-INFO: [Synth 8-6157] synthesizing module 'LS_74_138' [E:/DigitalCircuit-Verilog-Base-Learning/lab3/lab3.srcs/sources_1/new/binary_encoder.v:37]
-WARNING: [Synth 8-6896] if statement with non-constant condition is inside initial block, initial block items will be ignored [E:/DigitalCircuit-Verilog-Base-Learning/lab3/lab3.srcs/sources_1/new/binary_encoder.v:44]
-INFO: [Synth 8-6155] done synthesizing module 'LS_74_138' (0#1) [E:/DigitalCircuit-Verilog-Base-Learning/lab3/lab3.srcs/sources_1/new/binary_encoder.v:37]
-INFO: [Synth 8-6155] done synthesizing module 'binary_encoder' (0#1) [E:/DigitalCircuit-Verilog-Base-Learning/lab3/lab3.srcs/sources_1/new/binary_encoder.v:23]
-WARNING: [Synth 8-3848] Net Y in module/entity LS_74_138 does not have driver. [E:/DigitalCircuit-Verilog-Base-Learning/lab3/lab3.srcs/sources_1/new/binary_encoder.v:38]
-WARNING: [Synth 8-7129] Port Y[7] in module LS_74_138 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Y[6] in module LS_74_138 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Y[5] in module LS_74_138 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Y[4] in module LS_74_138 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Y[3] in module LS_74_138 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Y[2] in module LS_74_138 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Y[1] in module LS_74_138 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Y[0] in module LS_74_138 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port A in module LS_74_138 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port B in module LS_74_138 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port C in module LS_74_138 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port G1 in module LS_74_138 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port G2A in module LS_74_138 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port G2B in module LS_74_138 is either unconnected or has no load
----------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1024.453 ; gain = 545.953
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1024.453 ; gain = 545.953
+Finished Constraint Validation : Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1498.898 ; gain = 618.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
-Loading part: xc7k70tlfbg484-2L
+Loading part: xc7a100tfgg484-2L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1024.453 ; gain = 545.953
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1498.898 ; gain = 618.125
 ---------------------------------------------------------------------------------
-INFO: [Device 21-403] Loading part xc7k70tlfbg484-2L
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1024.453 ; gain = 545.953
+Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-No constraint files found.
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1498.898 ; gain = 618.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1498.898 ; gain = 618.125
+---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 8     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -115,36 +101,30 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-No constraint files found.
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-7129] Port Y[7] in module binary_encoder is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Y[6] in module binary_encoder is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Y[5] in module binary_encoder is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Y[4] in module binary_encoder is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Y[3] in module binary_encoder is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Y[2] in module binary_encoder is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Y[1] in module binary_encoder is either unconnected or has no load
-WARNING: [Synth 8-7129] Port Y[0] in module binary_encoder is either unconnected or has no load
-WARNING: [Synth 8-7129] Port C in module binary_encoder is either unconnected or has no load
-WARNING: [Synth 8-7129] Port G1 in module binary_encoder is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1196.691 ; gain = 718.191
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 1498.898 ; gain = 618.125
 ---------------------------------------------------------------------------------
-No constraint files found.
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:02 ; elapsed = 00:00:17 . Memory (MB): peak = 1498.898 ; gain = 618.125
+---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1196.691 ; gain = 718.191
+Finished Timing Optimization : Time (s): cpu = 00:00:02 ; elapsed = 00:00:17 . Memory (MB): peak = 1498.898 ; gain = 618.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1196.691 ; gain = 718.191
+Finished Technology Mapping : Time (s): cpu = 00:00:02 ; elapsed = 00:00:17 . Memory (MB): peak = 1498.898 ; gain = 618.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -162,37 +142,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 1196.691 ; gain = 718.191
+Finished IO Insertion : Time (s): cpu = 00:00:03 ; elapsed = 00:00:20 . Memory (MB): peak = 1498.898 ; gain = 618.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 1196.691 ; gain = 718.191
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:03 ; elapsed = 00:00:20 . Memory (MB): peak = 1498.898 ; gain = 618.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 1196.691 ; gain = 718.191
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:03 ; elapsed = 00:00:20 . Memory (MB): peak = 1498.898 ; gain = 618.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 1196.691 ; gain = 718.191
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:03 ; elapsed = 00:00:20 . Memory (MB): peak = 1498.898 ; gain = 618.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 1196.691 ; gain = 718.191
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:20 . Memory (MB): peak = 1498.898 ; gain = 618.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 1196.691 ; gain = 718.191
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:03 ; elapsed = 00:00:20 . Memory (MB): peak = 1498.898 ; gain = 618.125
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -205,39 +185,34 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+------+------+
-|      |Cell  |Count |
-+------+------+------+
-|1     |OBUFT |     8|
-+------+------+------+
-
-Report Instance Areas: 
-+------+---------+-------+------+
-|      |Instance |Module |Cells |
-+------+---------+-------+------+
-|1     |top      |       |     8|
-+------+---------+-------+------+
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT6 |     8|
+|2     |IBUF |     6|
+|3     |OBUF |     8|
++------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 1196.691 ; gain = 718.191
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:03 ; elapsed = 00:00:20 . Memory (MB): peak = 1498.898 ; gain = 618.125
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 27 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 1196.691 ; gain = 718.191
-Synthesis Optimization Complete : Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 1196.691 ; gain = 718.191
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:19 . Memory (MB): peak = 1498.898 ; gain = 548.066
+Synthesis Optimization Complete : Time (s): cpu = 00:00:03 ; elapsed = 00:00:20 . Memory (MB): peak = 1498.898 ; gain = 618.125
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1200.633 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1498.898 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1294.621 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1498.898 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 系统找不到指定的路径。
-Synth Design complete | Checksum: ffa38f83
+Synth Design complete | Checksum: a116470b
 INFO: [Common 17-83] Releasing license: Synthesis
-18 Infos, 27 Warnings, 0 Critical Warnings and 0 Errors encountered.
+21 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 1294.621 ; gain = 822.699
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1294.621 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'E:/DigitalCircuit-Verilog-Base-Learning/lab3/lab3.runs/synth_1/binary_encoder.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_utilization -file binary_encoder_utilization_synth.rpt -pb binary_encoder_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Dec  4 22:29:00 2023...
+synth_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:24 . Memory (MB): peak = 1498.898 ; gain = 1029.078
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1498.898 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/DigitalCircuit-Verilog-Base-Learning/lab3/lab3.runs/synth_1/LS_74_138.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file LS_74_138_utilization_synth.rpt -pb LS_74_138_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 15 09:03:14 2023...

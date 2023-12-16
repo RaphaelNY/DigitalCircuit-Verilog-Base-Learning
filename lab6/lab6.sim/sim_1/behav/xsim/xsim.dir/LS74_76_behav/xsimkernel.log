@@ -1,0 +1,7 @@
+Running: xsim.dir/LS74_76_behav/xsimk.exe -simmode gui -wdb LS74_76_behav.wdb -simrunnum 0 -socket 57778
+Design successfully loaded
+Design Loading Memory Usage: 8516 KB (Peak: 8516 KB)
+Design Loading CPU Usage: 31 ms
+Simulation completed
+Simulation Memory Usage: 9032 KB (Peak: 9032 KB)
+Simulation CPU Usage: 31 ms

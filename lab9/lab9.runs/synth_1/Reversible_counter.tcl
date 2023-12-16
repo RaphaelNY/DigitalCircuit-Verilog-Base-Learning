@@ -70,12 +70,9 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param checkpoint.writeSynthRtdsInDcp 1
-set_param synth.incrementalSynthesisCache C:/Users/Raphaeltop/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-59976-Raphaetop/incrSyn
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
+set_param chipscope.maxJobs 5
 OPTRACE "Creating in-memory project" START { }
-create_project -in_memory -part xc7k70tlfbg484-2L
+create_project -in_memory -part xc7a100tfgg484-2L
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
@@ -98,11 +95,16 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc E:/DigitalCircuit-Verilog-Base-Learning/lab9/lab9.srcs/constrs_1/new/Reversible_counter.xdc
+set_property used_in_implementation false [get_files E:/DigitalCircuit-Verilog-Base-Learning/lab9/lab9.srcs/constrs_1/new/Reversible_counter.xdc]
+
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental E:/DigitalCircuit-Verilog-Base-Learning/lab9/lab9.srcs/utils_1/imports/synth_1/Reversible_counter.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top Reversible_counter -part xc7k70tlfbg484-2L
+synth_design -top Reversible_counter -part xc7a100tfgg484-2L
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"

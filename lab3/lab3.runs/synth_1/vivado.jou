@@ -3,12 +3,12 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Mon Dec  4 22:28:40 2023
-# Process ID: 9472
+# Start of session at: Fri Dec 15 09:02:45 2023
+# Process ID: 54164
 # Current directory: E:/DigitalCircuit-Verilog-Base-Learning/lab3/lab3.runs/synth_1
-# Command line: vivado.exe -log binary_encoder.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source binary_encoder.tcl
-# Log file: E:/DigitalCircuit-Verilog-Base-Learning/lab3/lab3.runs/synth_1/binary_encoder.vds
+# Command line: vivado.exe -log LS_74_138.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source LS_74_138.tcl
+# Log file: E:/DigitalCircuit-Verilog-Base-Learning/lab3/lab3.runs/synth_1/LS_74_138.vds
 # Journal file: E:/DigitalCircuit-Verilog-Base-Learning/lab3/lab3.runs/synth_1\vivado.jou
 # Running On: Raphaetop, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 16781 MB
 #-----------------------------------------------------------
-source binary_encoder.tcl -notrace
+source LS_74_138.tcl -notrace

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tfgg484-2L" LaunchTime="1702602162">
+  <File Type="ROUTE-PWR" Name="LS_74_138_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="LS_74_138.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="LS_74_138_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="LS_74_138_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="LS_74_138.msk"/>
+  <File Type="ROUTE-CLK" Name="LS_74_138_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="LS_74_138.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="LS_74_138_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="LS_74_138.bit"/>
+  <File Type="BG-DRC" Name="LS_74_138.drc"/>
+  <File Type="BG-BGN" Name="LS_74_138.bgn"/>
+  <File Type="BG-BIN" Name="LS_74_138.bin"/>
+  <File Type="BITSTR-RBT" Name="LS_74_138.rbt"/>
+  <File Type="BITSTR-NKY" Name="LS_74_138.nky"/>
+  <File Type="BITSTR-BMM" Name="LS_74_138_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="LS_74_138.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="LS_74_138_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="LS_74_138.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="LS_74_138.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="LS_74_138_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="LS_74_138.hwdef"/>
+  <File Type="PLACE-IO" Name="LS_74_138_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="LS_74_138_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="LS_74_138_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="LS_74_138_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="LS_74_138_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="LS_74_138_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="LS_74_138_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="LS_74_138_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="LS_74_138_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="LS_74_138_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="LS_74_138_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="LS_74_138_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="LS_74_138_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="LS_74_138_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="LS_74_138_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="LS_74_138_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="LS_74_138_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="LS_74_138_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="LS_74_138_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="LS_74_138_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="LS_74_138_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="LS_74_138_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="LS_74_138_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="LS_74_138_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="LS_74_138_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="LS_74_138_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="LS_74_138_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="LS_74_138_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="LS_74_138_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="LS_74_138_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="LS_74_138_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="LS_74_138_bus_skew_postroute_physopted.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="LS_74_138_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="LS_74_138_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="LS_74_138_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="LS_74_138.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="LS_74_138_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="LS_74_138_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="LS_74_138.rcfi"/>
+  <File Type="CFI_FILE" Name="LS_74_138.cfi"/>
+  <File Type="RNPI_FILE" Name="LS_74_138.rnpi"/>
+  <File Type="NPI_FILE" Name="LS_74_138.npi"/>
+  <File Type="RBD_FILE" Name="LS_74_138.rbd"/>
+  <File Type="ROUTE-RQS" Name="LS_74_138_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="LS_74_138_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/binary_encoder.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="LS_74_138"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/LS_74_138.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/binary_encoder.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="UsedInSteps" Val="synth_1_copy_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

@@ -4,4 +4,4 @@ Oct 13 2023
 20:47:58
 E:/DigitalCircuit-Verilog-Base-Learning/lab2/lab2.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
 E:/DigitalCircuit-Verilog-Base-Learning/lab2/lab2.srcs/sim_1/new/test_cla.v,1701689070,verilog,,,,test_cla,,,,,,,,
-E:/DigitalCircuit-Verilog-Base-Learning/lab2/lab2.srcs/sources_1/new/cla.v,1701689158,verilog,,E:/DigitalCircuit-Verilog-Base-Learning/lab2/lab2.srcs/sim_1/new/test_cla.v,,FullAdder;cla,,,,,,,,
+E:/DigitalCircuit-Verilog-Base-Learning/lab2/lab2.srcs/sources_1/new/cla.v,1701691022,verilog,,E:/DigitalCircuit-Verilog-Base-Learning/lab2/lab2.srcs/sim_1/new/test_cla.v,,FullAdder;cla;clafun,,,,,,,,
