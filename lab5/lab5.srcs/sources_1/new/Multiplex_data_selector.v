@@ -58,3 +58,25 @@ module data_selecor_4_1(
         end
     end
 endmodule
+
+module ds(
+    input A,B,C,D,
+    input [2:0]S,
+    input EN_,
+    output reg Y
+);
+    always @(*) begin
+        if (EN_ == 1'b1) begin
+            Y = 1'b0;
+        end else begin 
+            case(S)
+                2'b00: Y = A;
+                2'b01: Y = B;
+                2'b10: Y = C;
+                2'b11: Y = D;
+                default: Y = 1'b0;
+            endcase
+        end
+    end
+    
+endmodule

@@ -50,8 +50,8 @@ module TS_8bits_Gate(
 );
 
     always @* begin
-        if(!EN_) F=A;
-        else F=7'bz;
+        if(!EN_) F<=A;
+        else F<=7'bz;
     end
 
 endmodule
@@ -62,12 +62,12 @@ module bit_8D(
     output reg [7:0] Q
 );
 
-    always @(CLR) begin
-        if(CLR) Q=8'b0;
+    always @(posedge CLR or posedge CLK) begin
+        if(CLR) begin
+            Q<=8'b0;
+        end else begin 
+            Q<=D;
+        end
     end
-
-    always @(posedge CLK) begin
-        if(!CLR) Q=D;
-    end
-
+    
 endmodule

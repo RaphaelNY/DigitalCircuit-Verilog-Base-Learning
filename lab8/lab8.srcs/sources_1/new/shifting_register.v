@@ -26,14 +26,16 @@ module shifting_register(
     output reg [7:0] Q 
     );
     
-    always @(CR_) begin
+//    always @(CR_) begin
+//        if(CR_) begin
+//            Q = 8'b0;
+//        end
+//    end
+    
+    always @(posedge CP or posedge CR_) begin
         if(CR_) begin
             Q = 8'b0;
-        end
-    end
-    
-    always @(posedge CP) begin
-        if(!S0 && S1) begin
+        end else if(!S0 && S1) begin
             Q = {SR, Q[7:1]};
         end else if(S0 && !S1) begin
             Q = {Q[6:0], SL};

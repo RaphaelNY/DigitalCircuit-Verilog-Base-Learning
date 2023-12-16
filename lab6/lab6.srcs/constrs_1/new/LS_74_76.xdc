@@ -1,0 +1,10 @@
+set_property BITSTREAM.GENERAL.COMPRESS true [current_design]
+set_property -dict {IOSTANDARD LVCMOS18 PACKAGE_PIN T3 PULLDOWN true} [get_ports J]
+set_property -dict {IOSTANDARD LVCMOS18 PACKAGE_PIN U3 PULLDOWN true} [get_ports K]
+set_property -dict {IOSTANDARD LVCMOS18 PACKAGE_PIN T4 PULLDOWN true} [get_ports SD_]
+set_property -dict {IOSTANDARD LVCMOS18 PACKAGE_PIN V3 PULLDOWN true} [get_ports RD_]
+set_property -dict {IOSTANDARD LVCMOS18 PACKAGE_PIN V4 PULLDOWN true} [get_ports CP]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets CP]
+
+set_property -dict {IOSTANDARD LVCMOS18 PACKAGE_PIN R1} [get_ports Q]
+set_property -dict {IOSTANDARD LVCMOS18 PACKAGE_PIN P2} [get_ports Q_]

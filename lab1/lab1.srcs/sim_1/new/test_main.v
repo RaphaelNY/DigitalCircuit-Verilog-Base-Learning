@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2023/12/04 22:30:55
+// Create Date: 2023/11/24 15:52:19
 // Design Name: 
-// Module Name: test_binary_encoder
+// Module Name: main_test
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,18 +20,17 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module test_binary_encoder;
-    reg A,B,C;
-    reg G1;
-    reg G2A,G2B;
-    wire [7:0] Y;
-
-    LS_74_138 U1(A,B,C,G1,G2A,G2B,Y);
-    
-    initial {G1,G2A,G2B,C,B,A} = 6'b100000;
-    
-    always begin
+module test_main;
+    parameter SIZE=4;
+    input [SIZE-1:0]A,B;
+    output [SIZE-1:0]F;
+    input Cin;
+    output Cout;
+    main FourAddFA(A,B,Cin,Cout,F);
+    initial{A,B,Cin} = 9'b0;
+    always
+    begin
         #100;
-        {G1,G2A,G2B,C,B,A} = {G1,G2A,G2B,C,B,A} + 1'b1;
+        {A,B,Cin} = {A,B,Cin} + 1'b1;
     end
 endmodule

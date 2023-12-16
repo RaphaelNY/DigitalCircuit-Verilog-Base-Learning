@@ -37,7 +37,7 @@ module LS_74_138(A,B,C,G1,G2A,G2B,Y);
     reg [4:0] i;
     reg [4:0] j;
     
-    always @* begin
+    always@(G1,G2A,G2B,A,B,C) begin
         if(!G1 | G2A | G2B) begin
             Y = 8'b11111111;
         end else begin

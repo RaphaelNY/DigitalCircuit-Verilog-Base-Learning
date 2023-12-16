@@ -34,36 +34,61 @@ module LS74_76(
                     Edge_JK_2(J2,K2,CP2,SD2,RD2,Q2,Q2_);
 
 endmodule
-
 module Edge_JK_trigger(
     input J,K,CP,SD_,RD_,
     output reg Q,Q_
     );
-    always @(SD_ or RD_) begin
-        if(SD_ && !RD_) begin
-            Q = 1'b0;
-            Q_ = 1'b1;
-        end 
-            else if(!SD_ && RD_) begin
-                Q = 1'b1;
-                Q_ = 1'b0;
-        end 
-    end
-    always @(negedge CP) begin
-            if(SD_ && RD_) begin
-            if(J && K) begin
-                Q <= !Q;
-                Q_ <= !Q_;
-            end else if(J && !K) begin
-                Q <= 1'b1;
-                Q_ <= 1'b0;
-            end else if(!J && K) begin
-                Q <= 1'b0;
-                Q_ <= 1'b1;
-            end
+    always @(negedge CP  or negedge SD_ or negedge RD_)
+    begin
+        if (!SD_)
+        begin
+            Q<=1;
+        end else if (!RD_)
+        begin
+            Q<=0;
+        end else
+        begin
+            case ({J, K})
+                2'b00: Q<=Q;
+                2'b01: Q<=0;
+                2'b10: Q<=1;
+                2'b11: Q<=!Q;
+            endcase
         end
     end
+    
+    assign _Q = !Q;
 endmodule
+
+//module Edge_JK_trigger(
+//    input J,K,CP,SD_,RD_,
+//    output reg Q,Q_
+//    );
+//    always @(SD_ or RD_) begin
+//        if(SD_ && !RD_) begin 
+//            Q <= 1'b0;
+//            Q_ <= 1'b1;
+//        end 
+//            else if(!SD_ && RD_) begin
+//                Q <= 1'b1;
+//                Q_ <= 1'b0;
+//        end 
+//    end
+//    always @(negedge CP) begin
+//            if(SD_ && RD_) begin
+//            if(J && K) begin
+//                Q <= !Q;
+//                Q_ <= !Q_;
+//            end else if(J && !K) begin
+//                Q <= 1'b1;
+//                Q_ <= 1'b0;
+//            end else if(!J && K) begin
+//                Q <= 1'b0;
+//                Q_ <= 1'b1;
+//            end
+//        end
+//    end
+//endmodule
 
 // module Edge_D_trigger(
 //     input D,

@@ -38,6 +38,6 @@ module test_8bit_register;
 
     always #20 D = D + 1'b1;
     always #30 OE_ = ~OE_;
-
+    always #90 CLR = ~CLR;
     
 endmodule
